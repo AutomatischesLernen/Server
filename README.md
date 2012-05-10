@@ -3,7 +3,7 @@ Server
 
 Der Server für unser Automatisches Lernen SEP
 
-## Schnittstelle
+## Datenmodell
 
 ### Card
 
@@ -28,6 +28,16 @@ Der Server für unser Automatisches Lernen SEP
 
 ```
 
+### Card_Answer
+
+```javascript
+{
+  cardID: 123,
+  userID: 123,
+  correct: true/false
+  answeredAt: DateTime
+}
+```
 ### Class
 
 ```javascript
