@@ -14,16 +14,20 @@ Der Server für unser Automatisches Lernen SEP
   question: "Was ist das hier?",
   response: "Das ist ganz toll",
   createdAt: DateTime,
-  updatedAt: DateTime
+  updatedAt: DateTime,
+  isBad: true/false
 }
 ```
 
-### Card_Upvotes
+### Card_Votes
 
 ```javascript
 {
   cardID: 123,
-  userID: 123
+  userID: 123,
+  vote: 1/-1,
+  createdAt: DateTime,
+  updatedAt: DateTime
 }
 
 ```
@@ -88,6 +92,8 @@ Der Server für unser Automatisches Lernen SEP
   id: 123,
   email: "foo@tu-bs.de",
   password: *password hash*,
+  firstname: "",
+  lastname: "",
   isAdmin: true/false,
   createdAt: DateTime
   updatedAt: DateTime
